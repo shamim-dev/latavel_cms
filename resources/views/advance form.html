@@ -1,0 +1,147 @@
+@extends('admin.layout')
+@section('a')
+<div class="container" >
+        <div class="content" style="margin-top: 63px; color: #000;  font-size:16px;">
+            <div style="margin-left: 120px;"> 
+
+                   
+                   <header class="panel-heading" style="font-size: 29px; margin-top:2px;">
+                            <i class="icon_document"></i>  Student Registration form
+                    </header>
+                   <hr style="margin-bottom:0px; margin-top:2px; border:1px solid #03C;">
+                   <hr style="margin-top:2px; border:2px solid #03C;">
+               
+     
+            <div class="row" style="padding: 0px 5px;">
+                
+               <form action="#" method="post" class="form">  
+                    <div class=" col-sm-12 col-md-6">
+                       <div class="thumbnail familycol"> 
+                     
+                        <legend style="background-color:#F8F8F8;">
+                            <i class="icon_profile"></i> Personal Information
+                        </legend>
+                        
+                        <div class="row">
+                                <div class="col-xs-12 col-md-12">
+                                    <label class="required">Student's Full name <i class="icon_cog"></i></label> 
+                                    <input type="text" name="lastname" value="" class="form-control input-sm" placeholder="Last Name"  />
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="row">
+                                <div class="col-xs-6 col-md-6">
+                                    <label class="required">Father's name</label>
+                                    <input type="text" name="firstname" value="" class="form-control " placeholder="First Name"  />
+                                </div>
+                                
+                                <div class="col-xs-6 col-md-6">
+                                    <label class="required">Mother's name</label>
+                                    <input type="text" name="middlename" value="" class="form-control input-sm" placeholder="Middle Name"  />
+                                </div>
+                            </div>
+                                
+                                
+                                
+                            <label>Gender : </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="gender" value="M" id=male />                        
+                                Male
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="gender" value="F" id=female />                        
+                                Female
+                            </label>
+                            <br>
+                            <label>Address</label>
+                            <textarea class="form-control input-sm" name="address" rows="3" placeholder="Address"></textarea>
+                            <label class="required">Area/Town/City</label>
+                            <input type="text" name="area" value="" class="form-control input-sm"/>
+                            <label class="required">Telephone</label>
+                            <input type="text" name="telephone" value="" class="form-control input-sm"/>
+                            <label>Telephone 2</label>
+                            <input type="text" name="telephone2" value="" class="form-control input-sm"/>
+                            <br/>
+                        
+                    </div>
+                </div>
+                
+                <div class="col-sm-12 col-md-6">
+                    <div class="thumbnail familycol">
+                    <legend style="background-color:#F7F7F7"><i class="icon_book"></i> Course Information</legend>
+                            <div class="row">
+                            
+                                <div class="col-xs-6 col-md-6">
+                                
+                                    <label class="required">Select package type</label>
+                                    <select name="plan" id="plan" class = "form-control input-sm">
+                                    </select> 
+                                </div>
+                                <div class="col-xs-6 col-md-6">
+                                    <label class="required">Select Period</label>
+                                    <select name="tariff" id="tariff" class = "form-control input-sm">
+                                    </select> 
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12" id="ajaxnotes"></div>
+                            </div>
+                            <input type="hidden" name="desc" id="desc" />
+                            <div class="row">
+                                
+                                <div class="col-md-6">
+                                    <label class="required">Start date:</label>
+                                    <input type="text" name="start_date" class="form-control input-sm datepicker"/>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="required">Expire date</label>
+                                    <input type="text" name="end_date" class="form-control input-sm datepicker"/>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label style="display: block; border-bottom: 1px solid #ddd;">Fees:</label>
+                                </div>
+                             </div>
+                                
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label class="required">Paid amount</label>
+                                    <input type="text" name="paid" class="form-control input-sm"/>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <label>Unpaid amount</label>
+                                    <input type="text" name="unpaid" class="form-control input-sm"/>
+                                </div>
+                                
+                             </div>
+                            
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label>Next installment alert</label>
+                                    <input type="text" name="instalmentdate" class="form-control input-sm datepicker"/>
+                                </div>
+                            </div>
+                             
+                            <span class="help-block">By clicking <em><strong>Submit Form</strong></em>, you agree to our Terms and that you have read our Data Use Policy.</span>
+                            <button class="btn btn-lg btn-primary btn-block signup-btn" type="submit">
+                               <i class="icon_cloud-upload"></i>&nbsp;&nbsp;&nbsp;&nbsp; Submit Form to cloud</button>
+                         
+                    </div>
+                </div>
+                </form> 
+          
+        
+
+              </div>
+           </div>         
+       </div>
+</div>
+
+
+ @endsection()
+ 
+ 
